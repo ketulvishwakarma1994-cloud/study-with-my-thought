@@ -1,0 +1,124 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial;
+  background:#f4f4f4;
+}
+
+nav{
+  background:black;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+header{
+  height:80vh;
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+  background-size:cover;
+  background-position:center;
+
+  color:white;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  padding:20px;
+}
+
+header h2{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+header p{
+  font-size:20px;
+  margin-bottom:20px;
+}
+
+button{
+  padding:15px 30px;
+  border:none;
+  background:blue;
+  color:white;
+  font-size:18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.subjects{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:50px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  width:250px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+  text-align:center;
+}
+.notes{
+  padding:50px;
+  background:#fff;
+  text-align:center;
+}
+
+.notes h2{
+  margin-bottom:30px;
+  font-size:40px;
+}
+
+.note-box{
+  background:#f4f4f4;
+  margin:20px auto;
+  padding:20px;
+  width:300px;
+  border-radius:10px;
+}
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav ul{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  header h2{
+    font-size:35px;
+  }
+
+  header p{
+    font-size:18px;
+  }
+
+  .subjects{
+    flex-direction:column;
+    align-items:center;
+  }
+
+}
